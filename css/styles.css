@@ -1,39 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 *{
-    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Gothic One';
 }
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     width: 100%;
-    height: 3rem;
+    height: 4rem;
 
-    background-color: rgb(144, 212, 144);
-    border-bottom: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+    font-family: 'Pathway Gothic One';
 }
 
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    width: 20%;
+}
 
 header nav a{
-    display: inline-block;
-
-    padding: 0 5rem;
+    padding: 0 6rem;
     height: 20px;
 
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
     font-weight: bold;
 }
 
-.presentation{
-    background-color: rgb(0, 255, 0);
-    width: 100%;
-    height: 50vh;
+header nav a i{
+    color: white;
+    margin: 5px;
 }
 
-.contenido-presentation{
-    margin-right: 20px ;
+.presentation{
+    background-color: rgb(98, 0, 255);
+    width: 100%;
+    height: 49rem;
+}
+
+.content-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    padding: 10vh 1rem;
+}
+
+.content-presentation p{
+    font-size: 35px;
+    font-family: 'Pathway Gothic One';
+    font-weight: 600;
+
+    color: white;
+}
+
+.content-presentation>h1{
+    font-size: 80px;
+    font-family: 'Staatliches';
+
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(196, 196, 196);
+}
+
+.content-presentation span{
+    margin-top: 10px;
+
+    color: white;
+    font-size: 35px;
+    font-family: 'Pathway Gothic One';
+    font-weight: 700;
+}
+
+.content-presentation img{
+    position: absolute;
+
+    object-fit: cover;
+    width: 50vh;
+    height: auto;
+
+    top: 4rem;
+    left: 60rem;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.1);
+  }
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+
+    width: 30%;
+    margin: 1rem;
+}
+
+.contact, .CV{
+    width: 35%;
+    height: 3rem;
+    
+    border: 1px transparent;
+    border-radius: 10px;
+
+    color: black;
+    background-color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.CV{
+    color: white;
+    background-color: black;
+}
+
+.contact:hover, .CV:hover{
+    transform: scale(1.25,1.25);
+    transition: ease-in 0.5s;  
+}
+
+.contact:hover{
+    color: white;
+    background-color: black; 
+}
+
+.CV:hover{
+    color: black;
+    background-color: white;   
+}
+
+.information-container{
+    width: 80%;
+    height: 20rem;
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    
+    margin: -4% auto;
+    padding-left: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.information-container img{
+    height: 25vh;
+    border: 5px solid black;
+}
+
+.information-text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    width: 70%;
+}
+
+.information-text h2{
+    font-size: 35px;
+    border-bottom: 2px solid black;
+    width: 11%;
+}
+
+.information-text span{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.information-text p{
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 10px;
+}
+
+.buttons-information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+
+    width: 30%;
+    margin: 0.5rem;
+}
+
+.contact-information, .CV-information{
+    width: 45%;
+    height: 3rem;
+    
+    border-radius: 10px;
+
+    color: white;
+    background-color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services{
+    width: 100%;
+    height: 60vh;
+    
+    background-color: rgb(98, 0, 255);
+}
+
+.services-text{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+
+    height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-text h2{
+    margin: 5px;
+    font-size: 40px;
+}
+
+.services-text p{
+    margin: 5px;
+    font-size: 24px;
+    border-bottom: 1px solid white;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 80%;
+}
+
+.box1, .box2, .box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid black;
+
+    width: 30%;
+    height: 90%;
+
+    color: white;
+    background-color: black;
+}
+
+.box1 h3,
+.box2 h3,
+.box3 h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    font-size: 30px;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+
+    color: black;
+    text-align: center;
+}
+
+.box1 p,
+.box2 p,
+.box3 p{
+    margin: 5px;
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 75%;
+
+}
+
+.box1 img{
+    object-fit: cover;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.box2 img{
+    object-fit: cover;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.box3 img{
+    object-fit: cover;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.box1 button,
+.box2 button,
+.box3 button{
+    width: 10rem;
+    height: 3rem;
+
+    background-color: white;
+    color: black;
+
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.box1 button{
+    margin: 5px;
+}
+
+.box2 button{
+    margin: 15px;
+}
+
+.box3 button{
+    margin: 10px;
+}
+
+.contact-me{
+    width: 100%;
+    height: 20vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(98, 0, 255);
+
+    margin-top: 15px;
+}
+
+.contact-me>h1{
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+.contact-me>.contact:hover{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+
+footer>p{
+    font-size: 40px;
+    margin: 15px;
+}
+
+.icons-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-footer i{
+    width: 4rem;
+    height: 4rem;
+    color: black;
+    
+    border-radius: 55%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.icons-footer i:hover{
+    background-color: #000000;
+    color: white;  
+    transition: all ease 0.5s;
+}
+
+@media (max-width: 1000px){
+    * {
+        box-sizing: border-box;
+      }
+
+    header{
+        width: 100%;
+        
+    }
+
+    .content-presentation img{
+        display: none;
+    }
+
+
+
+
+
 }
