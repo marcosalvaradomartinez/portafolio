@@ -146,7 +146,7 @@ button:active{
     background-color: white;   
 }
 
-.information-container{
+#information-container{
     width: 80%;
     height: 20rem;
     background: white;
@@ -161,7 +161,7 @@ button:active{
     align-items: center;
 }
 
-.information-container img{
+#information-container img{
     height: 25vh;
     border: 5px solid black;
 }
@@ -341,9 +341,44 @@ button:active{
     margin: 10px;
 }
 
+#projects{
+    width: 100%;  
+    margin-top: 1.25rem;
+}
+
+#projects>h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects-box{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.project-cards{
+    margin: 1rem;
+    margin-left: 2rem;
+    width: 90%;
+}
+
+.project-cards h3{
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    width: 23%;
+    text-align: center;
+}
+
+.project-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+}
+
 .contact-me{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     
     display: flex;
     flex-direction: column;
@@ -360,9 +395,46 @@ button:active{
     font-size: 50px;
 }
 
+.contact-me .contact{
+    margin: 1rem;
+}
 .contact-me>.contact:hover{
     background-color: white;
     color: black;
+}
+
+#icons-socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+#icons-socialmedia a{
+    text-decoration: none;
+}
+
+#icons-socialmedia i{
+    width: 4rem;
+    height: 4rem;
+    color: black;
+    
+    border-radius: 55%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+#icons-socialmedia i:hover{
+    background-color: #000000;
+    color: white;  
+    transition: all ease 0.5s;
+    cursor: pointer;
 }
 
 footer{
@@ -383,31 +455,9 @@ footer>p{
     margin: 15px;
 }
 
-.icons-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons-footer i{
-    width: 4rem;
-    height: 4rem;
-    color: black;
-    
-    border-radius: 55%;
-    background-color: rgb(255, 255, 255);
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    font-size: 24px;
-}
-
-.icons-footer i:hover{
-    background-color: #000000;
-    color: white;  
-    transition: all ease 0.5s;
+.copyright{
+    font-size: 16px;
+    color: rgb(99, 94, 94);
 }
 
 @media (max-width: 1000px){
