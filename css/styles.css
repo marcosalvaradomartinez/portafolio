@@ -447,21 +447,20 @@ button:active{
 
 #contact-form{
 	width: 100%;
-	height: 70vh;
+	height: 73.5vh;
 	display: flex;
+    flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
     background-color: rgb(98, 0, 255);
-
-    margin: 20px 0;
 }
 
 #contact-form form{
 	display: flex;
    
-	width: 80%;
-	height: 65vh;
+	width: 35%;
+	height: 70vh;
 	background-color: black;
 	color: white;
     border: 1px solid transparent;
@@ -471,21 +470,22 @@ button:active{
 }
 
 .contact-form-info{
-    width: 50%;
+    width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
 	align-items: center;
 }
 
 .contact-form-info h1{
-    font-size: 70px;
+    font-size: 50px;
     border-bottom: 2px solid white;
     margin: 10px;
 }
 
-.contact-form-info .name, .surnames, .email{
-    font-size: 30px;
+.contact-form-info .name, .surnames, .email, .message{
+    font-size: 15px;
     margin: 10px;
 }
 
@@ -495,28 +495,19 @@ button:active{
     font-size: 20px;
 }
 
-.contact-form-message{
-    width: 60%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	border-left: 1px solid rgb(255, 255, 255);
-}
-
-.contact-form-message p{
-    font-size: 70px;
+.contact-form-info p{
+    font-size: 30px;
     text-align: center;
 }
 
-.contact-form-message textarea{
-    width: 90%;
-    height: 40vh;
+.contact-form-info textarea{
+    width: 100%;
+    height: 15vh;
     margin: 1.5rem;
     font-size: 24px;
 }
 
-.contact-form-message .send{
+.contact-form-info .send{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,8 +515,8 @@ button:active{
     padding-bottom: 1rem;
 }
 
-.contact-form-message button{
-    width: 40%;
+.contact-form-info button{
+    width: 20vh;
     height: 3rem;
     
     font-size: 30px;
@@ -533,7 +524,7 @@ button:active{
     background-color: white;
 }
 
-.contact-form-message button a{
+.contact-form-info button a{
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -626,22 +617,112 @@ footer>p{
 }
 
 
-@media (max-width: 1000px){
-    * {
+@media (max-width: 991px){
+    *{
         box-sizing: border-box;
-      }
+        margin: 0
+    }
 
-    header{
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 4rem;
+    }
+
+    header .logo{
         width: 100%;
-        
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav a{
+        display: none;
+    }
+
+    .presentation{
+        width: 100%;
     }
 
     .content-presentation img{
         display: none;
     }
 
+    .content-presentation .buttons{
+        width: 100%;
+    }
 
+    #information-container{
+        width: 100%;
+        height: 60vh;
+    }
 
+    #information-container img{
+        display: none;
+    }
 
+    #information-container .buttons-information{
+        width: 100%;
+    }
 
-}
+    .services{
+        padding-top: 20rem;
+        height: 50rem;
+    }
+   
+    .boxes img{
+        width: 70%;
+    }
+
+    .box1 p,
+    .box2 p,
+    .box3 p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .box1 button,
+    .box2 button,
+    .box3 button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+
+        width: 80%;
+    }
+
+    #projects{
+        width: 100%;
+    }
+
+    .projects-box{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .contact-me h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    }
