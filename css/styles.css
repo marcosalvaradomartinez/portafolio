@@ -725,4 +725,11 @@ footer>p{
         font-size: 30px;
     }
 
+    
+    #contact-form form{
+        display: flex;
+        width: 90%;
+
+    }
+    
     }
