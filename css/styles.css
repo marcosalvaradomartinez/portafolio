@@ -112,7 +112,7 @@ button:active{
     margin: 1rem;
 }
 
-.contact, .CV{
+.contact, .newsletter{
     width: 35%;
     height: 3rem;
     
@@ -126,24 +126,19 @@ button:active{
     text-align: center;
 }
 
-.CV{
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.newsletter{
     color: white;
     background-color: black;
 }
 
-.contact:hover, .CV:hover{
-    transform: scale(1.25,1.25);
-    transition: ease-in 0.5s;  
-}
-
-.contact:hover{
+.newsletter a{
+    text-decoration: none;
     color: white;
-    background-color: black; 
-}
-
-.CV:hover{
-    color: black;
-    background-color: white;   
 }
 
 #information-container{
@@ -201,7 +196,7 @@ button:active{
     margin: 0.5rem;
 }
 
-.contact-information, .CV-information{
+.contact-information, .newsletter-information{
     width: 45%;
     height: 3rem;
     
@@ -212,6 +207,12 @@ button:active{
     font-size: 23px;
     font-weight: bold;
     text-align: center;
+}
+
+
+.contact-information a, .newsletter-information a{
+    text-decoration: none;
+    color: white;
 }
 
 .services{
@@ -341,6 +342,13 @@ button:active{
     margin: 10px;
 }
 
+.box1 a,
+.box2 a,
+.box3 a{
+    text-decoration: none;
+    color: black;
+}
+
 #projects{
     width: 100%;  
     margin-top: 1.25rem;
@@ -437,6 +445,100 @@ button:active{
     cursor: pointer;
 }
 
+#contact-form{
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+    background-color: rgb(98, 0, 255);
+
+    margin: 20px 0;
+}
+
+#contact-form form{
+	display: flex;
+   
+	width: 80%;
+	height: 65vh;
+	background-color: black;
+	color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+.contact-form-info{
+    width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-form-info h1{
+    font-size: 70px;
+    border-bottom: 2px solid white;
+    margin: 10px;
+}
+
+.contact-form-info .name, .surnames, .email{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.contact-form-info input{
+    width: 20rem;
+    height: 2rem;
+    font-size: 20px;
+}
+
+.contact-form-message{
+    width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid rgb(255, 255, 255);
+}
+
+.contact-form-message p{
+    font-size: 70px;
+    text-align: center;
+}
+
+.contact-form-message textarea{
+    width: 90%;
+    height: 40vh;
+    margin: 1.5rem;
+    font-size: 24px;
+}
+
+.contact-form-message .send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 1rem;
+}
+
+.contact-form-message button{
+    width: 40%;
+    height: 3rem;
+    
+    font-size: 30px;
+    color: black;
+    background-color: white;
+}
+
+.contact-form-message button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
 footer{
     width: 100%;
     height: 20vh;
@@ -459,6 +561,70 @@ footer>p{
     font-size: 16px;
     color: rgb(99, 94, 94);
 }
+
+.copyright i{
+    margin: 5px;
+}
+
+#container-newsletter{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 73.5vh;
+
+    background-color: rgb(185, 185, 185);
+}
+
+#container-newsletter h1{
+    font-size: 80px;
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}
+
+.news-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-newsletter h2{
+    font-size: 70px;
+    margin: 5px;
+}
+
+#container-newsletter p{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.container input{
+    width: 20%;
+    height: 2.5rem;
+    margin: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+
+    border-radius: 10px;
+}
+
+.container input:active{
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 1000px){
     * {
